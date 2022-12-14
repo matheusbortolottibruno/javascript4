@@ -10,27 +10,57 @@
 
 <body>
     <div>
-        <div>
-            <h1>Cartão de Visitas</h1>
-            <p>Preenche os dados</p>
-        </div>
-        <div>
-            <form action="">
-                <fieldset>
-                    <div>
-                        <label for="">nome</label>
-                        <input type="text" name="text" id="text">
-                    </div>
-                    
-                </fieldset>
-            </form>
-        </div>
+        <h1 id="titulo">Cartão de visita</h1>
 
-
-
-
-
+        <p id="subtitulo">Preencher os dados para criar seu cartão de visita virtual</p>
     </div>
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+
+                <input type="text" name="Nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+
+                <input type="text" name="sobrenome" id=sobrenome" required>
+            </div>
+            <div class="input-box">
+
+                <label for="number">Telefone</label>
+
+                <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+
+            </div>
+            <div class="input-box">
+
+                <label for="firstname">Profição</label>
+
+                <input id="firstname" type="text" name="firstname" required>
+
+            </div>
+
+            <div class="input-box">
+
+                        <label for="email">E-mail</label>
+
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+
+                    </div>
+
+                    <div class="contine-button">
+
+                        <button><a href="#">CRIAR CARTÃO</a></button>
+    
+    
+    
+                    </div>
+
+        </fieldset>
+    </form>
+
 
 </body>
 
