@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+.img{
+    
+}
 
 body {
     width: 100%;
@@ -63,6 +66,9 @@ button{
     background: black;
     padding: 2px;
     margin-bottom:  100px;
+    cursor: pointer;
+    
+
 
 }
 .rodape{
