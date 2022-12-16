@@ -5,61 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Javascript 4</title>
 </head>
 
 <body>
-    <div>
-        <h1 id="titulo">Cartão de visita</h1>
+    <div class="conteiner">
+        <div class="img">
+            <img src="computador (1).jpg" alt="" style="width:100px;">
+        </div>
+        <div class="texto">
+            <h1 id="titulo">Cartão de visita</h1>
 
-        <p id="subtitulo">Preencher os dados para criar seu cartão de visita virtual</p>
+            <p id="subtitulo">Preencher os dados para criar seu cartão de visita virtual</p>
+        </div>
+        <form>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="Nome" id="nome" required>
+                </div>
+
+                <div class="coluna">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id=sobrenome required>
+                </div>
+            </div>
+            <br>
+
+            <div class="linha2">
+                <div class="coluna2">
+                    <label for="number">Telefone</label>
+
+                    <input id="telefone" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+
+                </div>
+                <div class="coluna2">
+
+                    <label for="firstname">Profissão</label>
+
+                    <input id="profissao" type="text" name="firstname" required>
+
+                </div>
+
+            </div>
+            <br>
+            <div class="linha3">
+
+                <label for="email">E-mail</label>
+
+                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+
+            </div>
+
+            <div class="contine-button">
+
+                <button type="button" onclick="cartao()">CRIAR CARTÃO</button>
+
+            </div>
+            <div class="cartao">
+                <h1 id="nome"></h1>
+                <p id="sobrenome"></p>
+                <p id="telefone"></p>
+                <p id="profissao"></p>
+                <p id="email"></p>
+
+
+            </div>
+        </form>
+        <div class="rodape">
+            <h1 id="nomecartao">Matheus bruno</h1>
+            <p id="profissaocartao">DESENVOLVEDOR</p>
+            <p id="telefonecartao"> (xx) xxxx-xxxx</p>
+            <p id="emailcartao">Mateus.28@gmail.com</p>
+        </div>
+
+
     </div>
-    <form>
-        <fieldset class="grupo">
-            <div>
-                <label for="nome"><strong>Nome</strong></label>
-
-                <input type="text" name="Nome" id="nome" required>
-            </div>
-
-            <div class="campo">
-                <label for="sobrenome"><strong>Sobrenome</strong></label>
-
-                <input type="text" name="sobrenome" id=sobrenome" required>
-            </div>
-            <div class="input-box">
-
-                <label for="number">Telefone</label>
-
-                <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
-
-            </div>
-            <div class="input-box">
-
-                <label for="firstname">Profição</label>
-
-                <input id="firstname" type="text" name="firstname" required>
-
-            </div>
-
-            <div class="input-box">
-
-                        <label for="email">E-mail</label>
-
-                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
-
-                    </div>
-
-                    <div class="contine-button">
-
-                        <button><a href="#">CRIAR CARTÃO</a></button>
-    
-    
-    
-                    </div>
-
-        </fieldset>
-    </form>
+    <script src="app.js"></script>
 
 
 </body>
